@@ -9,4 +9,5 @@ public interface UploadService {
      * upload doc like pdf, docx etc..
      */
     void uploadDocuments(String base64);
+    void uploadPeko(String base64);
 }
