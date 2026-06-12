@@ -6,7 +6,7 @@ public interface UploadService {
     /**
      *
      * @param base64
-     * upload doc like pdf, docx etc
+     * upload doc like pdf, docx etc..
      */
     void uploadDocuments(String base64);
 }
