@@ -1,6 +1,7 @@
 package com.carPooling.backend.utils;
 
 public class StringFormat {
+
     public static String toTitleCase(String input) {
 
         if (input == null || input.trim().isEmpty()) {

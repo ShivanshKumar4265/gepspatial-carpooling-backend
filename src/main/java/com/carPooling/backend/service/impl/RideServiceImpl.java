@@ -10,6 +10,7 @@ import com.carPooling.backend.exception.custom_exception.UnauthorizedException;
 import com.carPooling.backend.repository.PreferenceRepository;
 import com.carPooling.backend.repository.UserRepository;
 import com.carPooling.backend.service.RideService;
+import com.carPooling.backend.utils.CurrentUserService;
 import com.carPooling.backend.utils.StringFormat;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
 
@@ -28,6 +31,7 @@ public class RideServiceImpl implements RideService {
 
     private final UserRepository userRepository;
     private final PreferenceRepository preferenceRepository;
+    private final CurrentUserService currentUserService;
 
 
     /**
@@ -110,27 +114,24 @@ public class RideServiceImpl implements RideService {
     @Override
     public CreatePreferenceResponse createPreference(  CreatePreferenceRequest createPreferenceRequest) {
 
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String email = authentication.getName();
-
-        // Read operation 1
-        Optional<User> userOptional = userRepository.findByEmail(email);
-
-        if (userOptional.isEmpty()) {
-            throw new UnauthorizedException("Unauthorized: User not found");
-        }
+        User user = currentUserService.getCurrentUser();
 
         // Read operation 2
         log.debug(
                 "Create preferedne request " + createPreferenceRequest.toString()
         );
-        if(preferenceRepository.existsByPreferenceName(StringFormat.toTitleCase(createPreferenceRequest.getPreferenceName()))){
+
+        String preferenceName =
+                StringFormat.toTitleCase(
+                        createPreferenceRequest.getPreferenceName()
+                );
+
+        if (preferenceRepository.existsByPreferenceName(preferenceName)) {
             throw new ConflictException("Preference Already Exist");
         }
 
         Preference preference = new Preference();
-        preference.setPreferenceName(createPreferenceRequest.getPreferenceName());
-
+        preference.setPreferenceName(preferenceName);
         //Write operation 1
         try {
             preference = preferenceRepository.save(preference);
@@ -139,5 +140,39 @@ public class RideServiceImpl implements RideService {
         }
 
         return new CreatePreferenceResponse(preference.getId(), preference.getPreferenceName());
+    }
+
+
+    @Override
+    public List<CreatePreferenceResponse> getPreferenceList() {
+
+        User user = currentUserService.getCurrentUser();
+
+        List<Preference> preferences = preferenceRepository.findAll();
+
+        List<CreatePreferenceResponse> responseList = new ArrayList<>();
+
+        /**
+         *
+         * return preferenceRepository.findAll()
+         *             .stream()
+         *             .map(preference -> new CreatePreferenceResponse(
+         *                     preference.getId(),
+         *                     preference.getPreferenceName()
+         *             ))
+         *             .toList();
+         *
+         */
+
+        for (Preference preference : preferences) {
+            responseList.add(
+                    new CreatePreferenceResponse(
+                            preference.getId(),
+                            preference.getPreferenceName()
+                    )
+            );
+        }
+
+        return responseList;
     }
 }

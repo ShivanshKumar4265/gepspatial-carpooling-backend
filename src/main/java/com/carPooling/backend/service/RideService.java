@@ -5,7 +5,9 @@ import com.carPooling.backend.dto.response.CreatePreferenceResponse;
 import jakarta.validation.Valid;
 
 import javax.swing.*;
+import java.util.List;
 
 public interface RideService {
     CreatePreferenceResponse createPreference(CreatePreferenceRequest createPreferenceRequest);
+    List<CreatePreferenceResponse> getPreferenceList();
 }

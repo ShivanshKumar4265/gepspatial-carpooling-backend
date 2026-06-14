@@ -12,6 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Slf4j
 @RestController
 @RequestMapping("/api/ride")
@@ -34,6 +36,24 @@ public class RideController {
                 new GenricDTO<>(
                         true,
                         "Preference Created successfully",
+                        response
+                )
+        );
+    }
+
+    @GetMapping("/preferences")
+    public ResponseEntity<GenricDTO<List<CreatePreferenceResponse>>> getPreferenceList( ) {
+
+        List<CreatePreferenceResponse> response = rideService.getPreferenceList();
+
+        log.debug(
+                "Preference list : {}. Response: {}",
+                response.size()
+        );
+        return ResponseEntity.ok(
+                new GenricDTO<>(
+                        true,
+                        "Preference List Fetched successfully",
                         response
                 )
         );
