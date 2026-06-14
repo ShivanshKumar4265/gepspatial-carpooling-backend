@@ -1,0 +1,41 @@
+package com.carPooling.backend.controller;
+
+
+import com.carPooling.backend.dto.GenricDTO;
+import com.carPooling.backend.dto.request.CreatePreferenceRequest;
+import com.carPooling.backend.dto.response.CreatePreferenceResponse;
+import com.carPooling.backend.repository.UserRepository;
+import com.carPooling.backend.service.RideService;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@Slf4j
+@RestController
+@RequestMapping("/api/ride")
+@RequiredArgsConstructor
+public class RideController {
+    private final RideService rideService;
+
+    @PostMapping("/preference")
+    public ResponseEntity<GenricDTO<CreatePreferenceResponse>> createPreference( @Valid @RequestBody CreatePreferenceRequest createPreferenceRequest) {
+
+        log.debug("Create PReference Response: {}", createPreferenceRequest.toString());
+        CreatePreferenceResponse response = rideService.createPreference(createPreferenceRequest);
+
+        log.debug(
+                "Preference added succesfully : {}. Response: {}",
+                response.getId(),
+                response.getPreference_name()
+        );
+        return ResponseEntity.ok(
+                new GenricDTO<>(
+                        true,
+                        "Preference Created successfully",
+                        response
+                )
+        );
+    }
+}

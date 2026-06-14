@@ -14,5 +14,4 @@ import java.time.LocalDateTime;
 public interface UserService {
     UpdateProfileResponse updateProfile(ProfileRequest req);
     void logout();
-
 }

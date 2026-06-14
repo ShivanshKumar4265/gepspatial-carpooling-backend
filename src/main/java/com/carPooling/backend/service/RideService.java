@@ -1,0 +1,11 @@
+package com.carPooling.backend.service;
+
+import com.carPooling.backend.dto.request.CreatePreferenceRequest;
+import com.carPooling.backend.dto.response.CreatePreferenceResponse;
+import jakarta.validation.Valid;
+
+import javax.swing.*;
+
+public interface RideService {
+    CreatePreferenceResponse createPreference(CreatePreferenceRequest createPreferenceRequest);
+}
