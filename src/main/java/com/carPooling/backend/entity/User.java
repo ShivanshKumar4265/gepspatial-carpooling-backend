@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -58,15 +60,6 @@ public class User extends BaseEntity  {
 
     private String city;
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", gender=" + gender +
-                ", city='" + city + '\'' +
-                '}';
-    }
+    @OneToMany(mappedBy = "user")
+    private List<Vehicles> vehiclesList = new ArrayList<>();
 }

@@ -1,14 +1,20 @@
 package com.carPooling.backend.service.impl;
 
 
+import com.carPooling.backend.dto.request.AddVehicleRequest;
 import com.carPooling.backend.dto.request.CreatePreferenceRequest;
+import com.carPooling.backend.dto.response.AddVehicleResponse;
 import com.carPooling.backend.dto.response.CreatePreferenceResponse;
+import com.carPooling.backend.dto.response.OwnerResponse;
 import com.carPooling.backend.entity.Preference;
 import com.carPooling.backend.entity.User;
+import com.carPooling.backend.entity.Vehicles;
 import com.carPooling.backend.exception.custom_exception.ConflictException;
+import com.carPooling.backend.exception.custom_exception.InvalidRequestException;
 import com.carPooling.backend.exception.custom_exception.UnauthorizedException;
 import com.carPooling.backend.repository.PreferenceRepository;
 import com.carPooling.backend.repository.UserRepository;
+import com.carPooling.backend.repository.VehicleRepository;
 import com.carPooling.backend.service.RideService;
 import com.carPooling.backend.utils.CurrentUserService;
 import com.carPooling.backend.utils.StringFormat;
@@ -29,8 +35,8 @@ import java.util.logging.Logger;
 @RequiredArgsConstructor
 public class RideServiceImpl implements RideService {
 
-    private final UserRepository userRepository;
     private final PreferenceRepository preferenceRepository;
+    private final VehicleRepository vehicleRepository;
     private final CurrentUserService currentUserService;
 
 
@@ -174,5 +180,43 @@ public class RideServiceImpl implements RideService {
         }
 
         return responseList;
+    }
+
+    @Override
+    public AddVehicleResponse addVehicle(AddVehicleRequest addVehicleRequest) {
+
+        User user = currentUserService.getCurrentUser();
+
+        if(vehicleRepository.existsByVehicleNumber(addVehicleRequest.getVehicleNumber())){
+            throw  new ConflictException("Vehicle already exist");
+        }
+
+        Vehicles vehicles = new Vehicles();
+        vehicles.setVehicleModel(addVehicleRequest.getVehicleModel());
+        vehicles.setVehicleType(addVehicleRequest.getVehicleType());
+        vehicles.setUser(user);
+        vehicles.setColor(addVehicleRequest.getColor());
+        vehicles.setTotalSeats(addVehicleRequest.getTotalSeats());
+        vehicles.setVehicleNumber(addVehicleRequest.getVehicleNumber());
+
+        try{
+            vehicles = vehicleRepository.save(vehicles);
+        }catch (RuntimeException e){
+            log.debug(
+                    "add vehicle {} : " + e.getMessage()
+            );
+            throw new InvalidRequestException("Somethign went wrong while adding vehicle " +e.getMessage());
+        }
+
+        AddVehicleResponse addVehicleResponse = new AddVehicleResponse();
+        addVehicleResponse.setVehicleId(vehicles.getId());
+        addVehicleResponse.setVehicleModel(vehicles.getVehicleModel());
+        addVehicleResponse.setVehicleType(vehicles.getVehicleType());
+        addVehicleResponse.setColor(vehicles.getColor());
+        addVehicleResponse.setTotalSeats(vehicles.getTotalSeats());
+        // Safely convert gender to a String for the OwnerResponse (handle nulls and non-String enums)
+        String genderString = (user.getGender() == null) ? "" : user.getGender().toString();
+        addVehicleResponse.setOwner(new OwnerResponse(user.getName(), user.getEmail(), user.getPhoneNumber(), genderString, user.getProfilePicture(), user.getDob(), user.getCollegeCompanyName()));
+        return addVehicleResponse;
     }
 }

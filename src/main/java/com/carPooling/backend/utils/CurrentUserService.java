@@ -3,7 +3,6 @@ package com.carPooling.backend.utils;
 import com.carPooling.backend.entity.User;
 import com.carPooling.backend.exception.custom_exception.UnauthorizedException;
 import com.carPooling.backend.repository.UserRepository;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
