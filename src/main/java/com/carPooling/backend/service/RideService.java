@@ -4,6 +4,7 @@ import com.carPooling.backend.dto.request.AddVehicleRequest;
 import com.carPooling.backend.dto.request.CreatePreferenceRequest;
 import com.carPooling.backend.dto.response.AddVehicleResponse;
 import com.carPooling.backend.dto.response.CreatePreferenceResponse;
+import com.carPooling.backend.dto.response.VehicleListResponse;
 import jakarta.validation.Valid;
 
 import javax.swing.*;
@@ -14,4 +15,5 @@ public interface RideService {
     List<CreatePreferenceResponse> getPreferenceList();
 
     AddVehicleResponse  addVehicle(AddVehicleRequest addVehicleRequest);
+    List<VehicleListResponse>  getVehicleListOfCurrentUser(AddVehicleRequest addVehicleRequest);
 }

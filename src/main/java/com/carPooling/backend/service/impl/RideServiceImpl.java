@@ -6,6 +6,7 @@ import com.carPooling.backend.dto.request.CreatePreferenceRequest;
 import com.carPooling.backend.dto.response.AddVehicleResponse;
 import com.carPooling.backend.dto.response.CreatePreferenceResponse;
 import com.carPooling.backend.dto.response.OwnerResponse;
+import com.carPooling.backend.dto.response.VehicleListResponse;
 import com.carPooling.backend.entity.Preference;
 import com.carPooling.backend.entity.User;
 import com.carPooling.backend.entity.Vehicles;
@@ -218,5 +219,36 @@ public class RideServiceImpl implements RideService {
         String genderString = (user.getGender() == null) ? "" : user.getGender().toString();
         addVehicleResponse.setOwner(new OwnerResponse(user.getName(), user.getEmail(), user.getPhoneNumber(), genderString, user.getProfilePicture(), user.getDob(), user.getCollegeCompanyName()));
         return addVehicleResponse;
+    }
+
+    @Override
+    public List<VehicleListResponse> getVehicleListOfCurrentUser(AddVehicleRequest addVehicleRequest) {
+        User user = currentUserService.getCurrentUser();
+        List<Vehicles>  vehiclesList;
+        List<VehicleListResponse>  vehicleListResponse = new ArrayList<>();
+        try{
+            vehiclesList = vehicleRepository.findAll();
+
+            if(vehiclesList.isEmpty()){
+                return new ArrayList<VehicleListResponse>();
+            }
+
+            for(int i = 0; i < vehiclesList.size();i++){
+                VehicleListResponse vehicleListData = new VehicleListResponse();
+
+                vehicleListData.setVehicleNumber(vehiclesList.get(i).getVehicleNumber());
+                vehicleListData.setVehicleId(vehiclesList.get(i).getId());
+                vehicleListData.setVehicleType(vehiclesList.get(i).getVehicleType());
+                vehicleListData.setVehicleModel(vehiclesList.get(i).getVehicleModel());
+                vehicleListData.setColor(vehiclesList.get(i).getColor());
+                vehicleListData.setTotalSeats(vehiclesList.get(i).getTotalSeats());
+
+                vehicleListResponse.add(vehicleListData);
+            }
+
+        } catch (RuntimeException e) {
+            throw  new RuntimeException("Vehicel list exception "+ e.getMessage());
+        }
+        return List.of();
     }
 }

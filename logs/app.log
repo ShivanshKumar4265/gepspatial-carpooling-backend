@@ -3040,3 +3040,8 @@ java.lang.NullPointerException: Cannot invoke "com.carPooling.backend.enums.Gend
 2026-06-18T16:12:03.698+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
 2026-06-18T16:12:03.712+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
 2026-06-18T16:12:03.762+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-5] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=4, vehicleNumber=null, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
+2026-06-18T16:13:08.119+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-18T16:13:08.123+05:30  INFO 86234 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-18T16:13:08.131+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:13:08.135+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-18T16:13:08.145+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
