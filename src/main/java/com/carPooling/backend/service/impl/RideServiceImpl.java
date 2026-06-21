@@ -222,10 +222,7 @@ public class RideServiceImpl implements RideService {
         return addVehicleResponse;
     }
 
-    /**
-     * for list of vehicles by current user
-     * @return
-     */
+
     @Override
     public List<VehicleListResponse> getVehicleListOfCurrentUser() {
         User user = currentUserService.getCurrentUser();
