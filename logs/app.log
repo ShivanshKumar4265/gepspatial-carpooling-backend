@@ -1,27 +1,22 @@
-2026-06-18T00:18:17.600+05:30  INFO 68672 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T00:18:17.618+05:30  INFO 68672 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T00:18:17.630+05:30  INFO 68672 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T00:18:17.634+05:30  INFO 68672 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T00:18:17.639+05:30  INFO 68672 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:15:13.063+05:30  INFO 15166 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 15166 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:15:13.067+05:30 DEBUG 15166 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:15:13.068+05:30  INFO 15166 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:15:13.949+05:30  INFO 15166 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:15:14.048+05:30  INFO 15166 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:15:14.915+05:30  INFO 15166 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:15:14.941+05:30  INFO 15166 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:15:14.941+05:30  INFO 15166 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:15:15.008+05:30  INFO 15166 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:15:15.009+05:30  INFO 15166 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1864 ms
-2026-06-18T15:15:15.146+05:30  INFO 15166 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:15:15.226+05:30  INFO 15166 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:15:15.279+05:30  INFO 15166 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:15:15.610+05:30  INFO 15166 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:15:15.652+05:30  INFO 15166 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:15:15.886+05:30  INFO 15166 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cd7e993
-2026-06-18T15:15:15.888+05:30  INFO 15166 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:15:15.937+05:30  WARN 15166 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:15:15.954+05:30  INFO 15166 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-22T02:31:14.457+05:30  INFO 241044 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 241044 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
+2026-06-22T02:31:14.468+05:30 DEBUG 241044 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-22T02:31:14.470+05:30  INFO 241044 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-22T02:31:15.445+05:30  INFO 241044 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-22T02:31:15.530+05:30  INFO 241044 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2026-06-22T02:31:16.226+05:30  INFO 241044 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-06-22T02:31:16.239+05:30  INFO 241044 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-22T02:31:16.239+05:30  INFO 241044 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-22T02:31:16.281+05:30  INFO 241044 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-22T02:31:16.281+05:30  INFO 241044 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1737 ms
+2026-06-22T02:31:16.410+05:30  INFO 241044 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-22T02:31:16.482+05:30  INFO 241044 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-22T02:31:16.516+05:30  INFO 241044 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-22T02:31:16.775+05:30  INFO 241044 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-22T02:31:16.806+05:30  INFO 241044 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-22T02:31:16.966+05:30  INFO 241044 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db728df
+2026-06-22T02:31:16.968+05:30  INFO 241044 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-22T02:31:17.019+05:30  WARN 241044 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-22T02:31:17.039+05:30  INFO 241044 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.46
@@ -29,589 +24,22 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-18T15:15:16.958+05:30  INFO 15166 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:15:17.071+05:30  INFO 15166 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:15:17.413+05:30 DEBUG 15166 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:15:17.487+05:30  INFO 15166 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:15:17.488+05:30  WARN 15166 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:15:17.674+05:30  WARN 15166 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:15:18.007+05:30 DEBUG 15166 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:15:18.253+05:30  INFO 15166 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:15:18.265+05:30  INFO 15166 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 5.843 seconds (process running for 6.25)
-2026-06-18T15:29:47.308+05:30  INFO 15166 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:29:47.309+05:30  INFO 15166 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:29:47.311+05:30  INFO 15166 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-18T15:29:47.326+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
-2026-06-18T15:29:47.332+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T15:29:47.334+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
-2026-06-18T15:31:59.593+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:31:59.594+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T15:31:59.597+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
-2026-06-18T15:31:59.614+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /error
-2026-06-18T15:31:59.615+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T15:31:59.615+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
-2026-06-18T15:33:23.122+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:33:23.123+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T15:33:23.123+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
-2026-06-18T15:33:23.124+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /error
-2026-06-18T15:33:23.125+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T15:33:23.125+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
-2026-06-18T15:34:19.161+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:34:19.260+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:34:19.275+05:30 DEBUG 15166 --- [backend] [http-nio-8089-exec-9] c.c.b.exception.GlobalExceptionHandler   : An unexpected error occurred: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'totalSeats'
-
-jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'totalSeats'
-	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.3.Final.jar:8.0.3.Final]
-	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104) ~[spring-context-6.2.18.jar:6.2.18]
-	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.14.jar:3.5.14]
-	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.54.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.54.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:370) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at com.carPooling.backend.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:80) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:379) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.10.jar:6.5.10]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.10.jar:6.5.10]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.10.jar:6.5.10]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2026-06-18T15:34:51.097+05:30  INFO 15166 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:34:51.103+05:30  INFO 15166 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:34:51.116+05:30  INFO 15166 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:34:51.120+05:30  INFO 15166 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:34:51.142+05:30  INFO 15166 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:34:54.553+05:30  INFO 40273 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 40273 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:34:54.555+05:30 DEBUG 40273 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:34:54.556+05:30  INFO 40273 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:34:55.336+05:30  INFO 40273 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:34:55.405+05:30  INFO 40273 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:34:56.010+05:30  INFO 40273 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:34:56.022+05:30  INFO 40273 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:34:56.023+05:30  INFO 40273 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:34:56.064+05:30  INFO 40273 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:34:56.064+05:30  INFO 40273 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1452 ms
-2026-06-18T15:34:56.212+05:30  INFO 40273 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:34:56.266+05:30  INFO 40273 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:34:56.300+05:30  INFO 40273 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:34:56.524+05:30  INFO 40273 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:34:56.551+05:30  INFO 40273 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:34:56.724+05:30  INFO 40273 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cd7e993
-2026-06-18T15:34:56.725+05:30  INFO 40273 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:34:56.771+05:30  WARN 40273 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:34:56.787+05:30  INFO 40273 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:34:57.733+05:30  INFO 40273 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:34:57.815+05:30  INFO 40273 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:34:58.081+05:30 DEBUG 40273 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:34:58.184+05:30  INFO 40273 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:34:58.185+05:30  WARN 40273 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:34:58.305+05:30  WARN 40273 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:34:58.538+05:30 DEBUG 40273 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:34:58.763+05:30  INFO 40273 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:34:58.773+05:30  INFO 40273 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.723 seconds (process running for 5.058)
-2026-06-18T15:35:03.171+05:30  INFO 40273 --- [backend] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:35:03.171+05:30  INFO 40273 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:35:03.173+05:30  INFO 40273 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-06-18T15:35:03.190+05:30 DEBUG 40273 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:35:03.477+05:30 DEBUG 40273 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:35:59.421+05:30 DEBUG 40273 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:35:59.435+05:30 DEBUG 40273 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:37:03.340+05:30  INFO 40273 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:37:03.348+05:30  INFO 40273 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:37:03.361+05:30  INFO 40273 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:37:03.366+05:30  INFO 40273 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:37:03.380+05:30  INFO 40273 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:37:06.730+05:30  INFO 43227 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 43227 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:37:06.733+05:30 DEBUG 43227 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:37:06.735+05:30  INFO 43227 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:37:07.566+05:30  INFO 43227 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:37:07.633+05:30  INFO 43227 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:37:08.234+05:30  INFO 43227 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:37:08.247+05:30  INFO 43227 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:37:08.248+05:30  INFO 43227 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:37:08.291+05:30  INFO 43227 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:37:08.291+05:30  INFO 43227 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1499 ms
-2026-06-18T15:37:08.406+05:30  INFO 43227 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:37:08.456+05:30  INFO 43227 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:37:08.494+05:30  INFO 43227 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:37:08.708+05:30  INFO 43227 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:37:08.734+05:30  INFO 43227 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:37:08.882+05:30  INFO 43227 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c171746
-2026-06-18T15:37:08.884+05:30  INFO 43227 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:37:08.931+05:30  WARN 43227 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:37:08.949+05:30  INFO 43227 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:37:09.808+05:30  INFO 43227 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:37:09.905+05:30  INFO 43227 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:37:10.205+05:30 DEBUG 43227 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:37:10.264+05:30  INFO 43227 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:37:10.265+05:30  WARN 43227 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:37:10.384+05:30  WARN 43227 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:37:10.640+05:30 DEBUG 43227 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:37:10.868+05:30  INFO 43227 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:37:10.878+05:30  INFO 43227 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.763 seconds (process running for 5.204)
-2026-06-18T15:37:16.180+05:30  INFO 43227 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:37:16.180+05:30  INFO 43227 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:37:16.182+05:30  INFO 43227 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-18T15:37:16.198+05:30 DEBUG 43227 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:37:16.502+05:30 DEBUG 43227 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:37:16.740+05:30  WARN 43227 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
-2026-06-18T15:37:16.741+05:30 ERROR 43227 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'vehicle_number' cannot be null
-2026-06-18T15:37:16.754+05:30 DEBUG 43227 --- [backend] [http-nio-8089-exec-2] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Column 'vehicle_number' cannot be null] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [null]
-2026-06-18T15:37:23.798+05:30 DEBUG 43227 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:37:23.812+05:30 DEBUG 43227 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:37:23.840+05:30  WARN 43227 --- [backend] [http-nio-8089-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
-2026-06-18T15:37:23.841+05:30 ERROR 43227 --- [backend] [http-nio-8089-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'vehicle_number' cannot be null
-2026-06-18T15:37:23.843+05:30 DEBUG 43227 --- [backend] [http-nio-8089-exec-3] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Column 'vehicle_number' cannot be null] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [null]
-2026-06-18T15:40:36.325+05:30  INFO 43227 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:40:36.332+05:30  INFO 43227 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:40:36.346+05:30  INFO 43227 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:40:36.353+05:30  INFO 43227 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:40:36.370+05:30  INFO 43227 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:40:39.438+05:30  INFO 47545 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 47545 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:40:39.441+05:30 DEBUG 47545 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:40:39.442+05:30  INFO 47545 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:40:40.215+05:30  INFO 47545 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:40:40.282+05:30  INFO 47545 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:40:40.876+05:30  INFO 47545 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:40:40.889+05:30  INFO 47545 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:40:40.890+05:30  INFO 47545 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:40:40.933+05:30  INFO 47545 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:40:40.934+05:30  INFO 47545 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
-2026-06-18T15:40:41.054+05:30  INFO 47545 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:40:41.112+05:30  INFO 47545 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:40:41.139+05:30  INFO 47545 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:40:41.345+05:30  INFO 47545 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:40:41.369+05:30  INFO 47545 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:40:41.530+05:30  INFO 47545 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cd7e993
-2026-06-18T15:40:41.532+05:30  INFO 47545 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:40:41.575+05:30  WARN 47545 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:40:41.591+05:30  INFO 47545 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:40:42.445+05:30  INFO 47545 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:40:42.516+05:30  INFO 47545 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:40:42.807+05:30 DEBUG 47545 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:40:42.874+05:30  INFO 47545 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:40:42.875+05:30  WARN 47545 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:40:42.991+05:30  WARN 47545 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:40:43.303+05:30 DEBUG 47545 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:40:43.499+05:30  INFO 47545 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:40:43.509+05:30  INFO 47545 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.604 seconds (process running for 4.963)
-2026-06-18T15:40:45.492+05:30  INFO 47545 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:40:45.492+05:30  INFO 47545 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:40:45.494+05:30  INFO 47545 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-18T15:40:45.521+05:30 DEBUG 47545 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:40:45.881+05:30 DEBUG 47545 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:40:46.154+05:30  WARN 47545 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
-2026-06-18T15:40:46.155+05:30 ERROR 47545 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'seats' doesn't have a default value
-2026-06-18T15:40:46.166+05:30 DEBUG 47545 --- [backend] [http-nio-8089-exec-2] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Field 'seats' doesn't have a default value] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]
-2026-06-18T15:41:24.957+05:30  INFO 47545 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:41:24.961+05:30  INFO 47545 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:41:24.975+05:30  INFO 47545 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:41:24.983+05:30  INFO 47545 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:41:25.000+05:30  INFO 47545 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:41:27.978+05:30  INFO 48604 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 48604 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:41:27.980+05:30 DEBUG 48604 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:41:27.981+05:30  INFO 48604 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:41:28.721+05:30  INFO 48604 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:41:28.786+05:30  INFO 48604 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:41:29.409+05:30  INFO 48604 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:41:29.422+05:30  INFO 48604 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:41:29.422+05:30  INFO 48604 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:41:29.464+05:30  INFO 48604 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:41:29.465+05:30  INFO 48604 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
-2026-06-18T15:41:29.580+05:30  INFO 48604 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:41:29.633+05:30  INFO 48604 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:41:29.664+05:30  INFO 48604 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:41:29.873+05:30  INFO 48604 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:41:29.897+05:30  INFO 48604 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:41:30.055+05:30  INFO 48604 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@778113f2
-2026-06-18T15:41:30.057+05:30  INFO 48604 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:41:30.103+05:30  WARN 48604 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:41:30.122+05:30  INFO 48604 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:41:31.021+05:30  INFO 48604 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:41:31.092+05:30  INFO 48604 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:41:31.350+05:30 DEBUG 48604 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:41:31.430+05:30  INFO 48604 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:41:31.431+05:30  WARN 48604 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:41:31.553+05:30  WARN 48604 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:41:31.806+05:30 DEBUG 48604 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:41:32.004+05:30  INFO 48604 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:41:32.015+05:30  INFO 48604 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.575 seconds (process running for 4.986)
-2026-06-18T15:41:37.331+05:30  INFO 48604 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:41:37.331+05:30  INFO 48604 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:41:37.337+05:30  INFO 48604 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2026-06-18T15:41:37.364+05:30 DEBUG 48604 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:41:37.740+05:30 DEBUG 48604 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:41:37.982+05:30  WARN 48604 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
-2026-06-18T15:41:37.982+05:30 ERROR 48604 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'seats' doesn't have a default value
-2026-06-18T15:41:37.992+05:30 DEBUG 48604 --- [backend] [http-nio-8089-exec-2] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Field 'seats' doesn't have a default value] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]
-2026-06-18T15:46:03.802+05:30  INFO 48604 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:46:03.808+05:30  INFO 48604 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:46:03.827+05:30  INFO 48604 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:46:03.834+05:30  INFO 48604 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:46:03.848+05:30  INFO 48604 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:46:07.253+05:30  INFO 54263 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 54263 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:46:07.257+05:30 DEBUG 54263 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:46:07.263+05:30  INFO 54263 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:46:07.996+05:30  INFO 54263 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:46:08.062+05:30  INFO 54263 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:46:08.721+05:30  INFO 54263 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:46:08.735+05:30  INFO 54263 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:46:08.736+05:30  INFO 54263 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:46:08.779+05:30  INFO 54263 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:46:08.780+05:30  INFO 54263 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1474 ms
-2026-06-18T15:46:08.925+05:30  INFO 54263 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:46:08.991+05:30  INFO 54263 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:46:09.018+05:30  INFO 54263 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:46:09.237+05:30  INFO 54263 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:46:09.263+05:30  INFO 54263 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:46:09.427+05:30  INFO 54263 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ff21443
-2026-06-18T15:46:09.430+05:30  INFO 54263 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:46:09.498+05:30  WARN 54263 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:46:09.519+05:30  INFO 54263 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:46:10.399+05:30  INFO 54263 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:46:10.472+05:30  INFO 54263 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:46:10.744+05:30 DEBUG 54263 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:46:10.814+05:30  INFO 54263 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:46:10.815+05:30  WARN 54263 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:46:10.972+05:30  WARN 54263 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:46:11.283+05:30 DEBUG 54263 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:46:11.492+05:30  INFO 54263 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:46:11.503+05:30  INFO 54263 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.88 seconds (process running for 5.294)
-2026-06-18T15:46:31.100+05:30  INFO 54263 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:46:31.101+05:30  INFO 54263 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:46:31.103+05:30  INFO 54263 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-06-18T15:46:31.122+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:46:36.172+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
-2026-06-18T15:46:36.176+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T15:46:36.180+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
-2026-06-18T15:47:05.525+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:47:05.576+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:47:05.699+05:30  WARN 54263 --- [backend] [http-nio-8089-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
-2026-06-18T15:47:05.700+05:30 ERROR 54263 --- [backend] [http-nio-8089-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'seats' doesn't have a default value
-2026-06-18T15:47:05.711+05:30 DEBUG 54263 --- [backend] [http-nio-8089-exec-4] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Field 'seats' doesn't have a default value] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]
-2026-06-18T15:49:40.728+05:30  INFO 54263 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:49:40.734+05:30  INFO 54263 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:49:40.747+05:30  INFO 54263 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:49:40.754+05:30  INFO 54263 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:49:40.775+05:30  INFO 54263 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:49:44.178+05:30  INFO 58598 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 58598 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:49:44.182+05:30 DEBUG 58598 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:49:44.183+05:30  INFO 58598 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:49:44.899+05:30  INFO 58598 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:49:44.964+05:30  INFO 58598 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:49:45.551+05:30  INFO 58598 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:49:45.568+05:30  INFO 58598 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:49:45.569+05:30  INFO 58598 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:49:45.612+05:30  INFO 58598 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:49:45.613+05:30  INFO 58598 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1375 ms
-2026-06-18T15:49:45.729+05:30  INFO 58598 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:49:45.784+05:30  INFO 58598 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:49:45.816+05:30  INFO 58598 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:49:46.038+05:30  INFO 58598 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:49:46.064+05:30  INFO 58598 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:49:46.213+05:30  INFO 58598 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@685e6a68
-2026-06-18T15:49:46.216+05:30  INFO 58598 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:49:46.276+05:30  WARN 58598 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:49:46.295+05:30  INFO 58598 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:49:47.186+05:30  INFO 58598 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:49:47.262+05:30  INFO 58598 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:49:47.548+05:30 DEBUG 58598 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:49:47.618+05:30  INFO 58598 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:49:47.619+05:30  WARN 58598 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:49:47.741+05:30  WARN 58598 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:49:48.007+05:30 DEBUG 58598 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:49:48.221+05:30  INFO 58598 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:49:48.232+05:30  INFO 58598 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.642 seconds (process running for 5.032)
-2026-06-18T15:49:54.751+05:30  INFO 58598 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:49:54.753+05:30  INFO 58598 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:49:54.756+05:30  INFO 58598 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-06-18T15:49:54.784+05:30 DEBUG 58598 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:49:55.091+05:30 DEBUG 58598 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:49:55.343+05:30  WARN 58598 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
-2026-06-18T15:49:55.344+05:30 ERROR 58598 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'seats' doesn't have a default value
-2026-06-18T15:49:55.356+05:30 DEBUG 58598 --- [backend] [http-nio-8089-exec-2] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Field 'seats' doesn't have a default value] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type,id) values (?,?,?,?,?,?,?,?,?,?)]
-2026-06-18T15:53:15.756+05:30  INFO 58598 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:53:15.770+05:30  INFO 58598 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:53:15.781+05:30  INFO 58598 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:53:15.786+05:30  INFO 58598 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:53:15.801+05:30  INFO 58598 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:53:17.706+05:30  INFO 63491 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 63491 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:53:17.709+05:30 DEBUG 63491 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:53:17.710+05:30  INFO 63491 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:53:18.610+05:30  INFO 63491 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:53:18.684+05:30  INFO 63491 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:53:19.359+05:30  INFO 63491 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:53:19.372+05:30  INFO 63491 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:53:19.373+05:30  INFO 63491 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:53:19.413+05:30  INFO 63491 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:53:19.414+05:30  INFO 63491 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1637 ms
-2026-06-18T15:53:19.529+05:30  INFO 63491 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:53:19.583+05:30  INFO 63491 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:53:19.612+05:30  INFO 63491 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:53:19.827+05:30  INFO 63491 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:53:19.852+05:30  INFO 63491 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:53:20.007+05:30  INFO 63491 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54275b5d
-2026-06-18T15:53:20.008+05:30  INFO 63491 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:53:20.058+05:30  WARN 63491 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:53:20.076+05:30  INFO 63491 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:53:20.961+05:30  INFO 63491 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:53:21.126+05:30  INFO 63491 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:53:21.389+05:30 DEBUG 63491 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:53:21.447+05:30  INFO 63491 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:53:21.449+05:30  WARN 63491 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:53:21.565+05:30  WARN 63491 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:53:21.823+05:30 DEBUG 63491 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:53:22.042+05:30  INFO 63491 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:53:22.055+05:30  INFO 63491 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 5.016 seconds (process running for 5.371)
-2026-06-18T15:53:59.416+05:30  INFO 63491 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T15:53:59.426+05:30  INFO 63491 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T15:53:59.444+05:30  INFO 63491 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:53:59.452+05:30  INFO 63491 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T15:53:59.469+05:30  INFO 63491 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T15:54:02.864+05:30  INFO 64484 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 64484 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T15:54:02.866+05:30 DEBUG 64484 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T15:54:02.867+05:30  INFO 64484 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T15:54:03.724+05:30  INFO 64484 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T15:54:03.799+05:30  INFO 64484 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
-2026-06-18T15:54:04.476+05:30  INFO 64484 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T15:54:04.503+05:30  INFO 64484 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T15:54:04.504+05:30  INFO 64484 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T15:54:04.547+05:30  INFO 64484 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T15:54:04.547+05:30  INFO 64484 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1621 ms
-2026-06-18T15:54:04.666+05:30  INFO 64484 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T15:54:04.730+05:30  INFO 64484 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T15:54:04.770+05:30  INFO 64484 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T15:54:04.988+05:30  INFO 64484 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T15:54:05.013+05:30  INFO 64484 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T15:54:05.158+05:30  INFO 64484 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61e14b53
-2026-06-18T15:54:05.160+05:30  INFO 64484 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T15:54:05.213+05:30  WARN 64484 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T15:54:05.233+05:30  INFO 64484 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T15:54:06.182+05:30  INFO 64484 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T15:54:06.253+05:30  INFO 64484 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T15:54:06.512+05:30 DEBUG 64484 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T15:54:06.574+05:30  INFO 64484 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T15:54:06.575+05:30  WARN 64484 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T15:54:06.691+05:30  WARN 64484 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T15:54:06.941+05:30 DEBUG 64484 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T15:54:07.164+05:30  INFO 64484 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T15:54:07.176+05:30  INFO 64484 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.95 seconds (process running for 5.343)
-2026-06-18T15:54:13.046+05:30  INFO 64484 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T15:54:13.047+05:30  INFO 64484 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T15:54:13.050+05:30  INFO 64484 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-06-18T15:54:13.070+05:30 DEBUG 64484 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T15:54:13.392+05:30 DEBUG 64484 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T15:54:13.623+05:30 DEBUG 64484 --- [backend] [http-nio-8089-exec-2] c.c.backend.controller.RideController    : addVehicle Response: null
-2026-06-18T16:01:55.264+05:30  INFO 64484 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T16:01:55.268+05:30  INFO 64484 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T16:01:55.277+05:30  INFO 64484 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:01:55.281+05:30  INFO 64484 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T16:01:55.292+05:30  INFO 64484 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T16:01:59.751+05:30  INFO 74061 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 74061 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T16:01:59.753+05:30 DEBUG 74061 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T16:01:59.754+05:30  INFO 74061 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T16:02:00.457+05:30  INFO 74061 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T16:02:00.525+05:30  INFO 74061 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
-2026-06-18T16:02:01.113+05:30  INFO 74061 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T16:02:01.125+05:30  INFO 74061 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T16:02:01.126+05:30  INFO 74061 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T16:02:01.182+05:30  INFO 74061 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T16:02:01.183+05:30  INFO 74061 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
-2026-06-18T16:02:01.306+05:30  INFO 74061 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T16:02:01.361+05:30  INFO 74061 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T16:02:01.391+05:30  INFO 74061 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T16:02:01.631+05:30  INFO 74061 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T16:02:01.656+05:30  INFO 74061 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T16:02:01.814+05:30  INFO 74061 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5613247e
-2026-06-18T16:02:01.816+05:30  INFO 74061 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T16:02:01.875+05:30  WARN 74061 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T16:02:01.894+05:30  INFO 74061 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T16:02:02.945+05:30  INFO 74061 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T16:02:03.025+05:30  INFO 74061 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:02:03.318+05:30 DEBUG 74061 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T16:02:03.390+05:30  INFO 74061 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T16:02:03.391+05:30  WARN 74061 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T16:02:03.543+05:30  WARN 74061 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T16:02:03.799+05:30 DEBUG 74061 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T16:02:03.992+05:30  INFO 74061 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T16:02:04.002+05:30  INFO 74061 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.861 seconds (process running for 5.216)
-2026-06-18T16:02:07.017+05:30  INFO 74061 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T16:02:07.019+05:30  INFO 74061 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T16:02:07.025+05:30  INFO 74061 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-06-18T16:02:07.071+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:02:11.837+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
-2026-06-18T16:02:11.840+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-06-18T16:02:11.844+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
-2026-06-18T16:02:12.541+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-3] c.c.b.exception.GlobalExceptionHandler   : An unexpected error occurred: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2026-06-22T02:31:17.951+05:30  INFO 241044 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-22T02:31:18.043+05:30  INFO 241044 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-22T02:31:18.320+05:30 DEBUG 241044 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
+2026-06-22T02:31:18.376+05:30  INFO 241044 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-06-22T02:31:18.377+05:30  WARN 241044 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-06-22T02:31:18.493+05:30  WARN 241044 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-22T02:31:18.780+05:30 DEBUG 241044 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-06-22T02:31:18.980+05:30  INFO 241044 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2026-06-22T02:31:18.991+05:30  INFO 241044 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 5.167 seconds (process running for 5.716)
+2026-06-22T02:31:22.147+05:30  INFO 241044 --- [backend] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-22T02:31:22.149+05:30  INFO 241044 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-22T02:31:22.154+05:30  INFO 241044 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-06-22T02:31:22.187+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-06-22T02:31:22.196+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-22T02:31:22.199+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2026-06-22T02:31:23.041+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-1] c.c.b.exception.GlobalExceptionHandler   : An unexpected error occurred: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
 
 org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:494) ~[spring-web-6.2.18.jar:6.2.18]
@@ -2771,26 +2199,22 @@ Caused by: com.fasterxml.jackson.core.exc.StreamConstraintsException: Document n
 	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:111) ~[jackson-databind-2.21.2.jar:2.21.2]
 	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:25) ~[jackson-databind-2.21.2.jar:2.21.2]
 
-2026-06-18T16:02:35.971+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:02:36.045+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:02:44.945+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:02:44.966+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:02:45.038+05:30 DEBUG 74061 --- [backend] [http-nio-8089-exec-5] c.c.b.exception.GlobalExceptionHandler   : An unexpected error occurred: Cannot invoke "com.carPooling.backend.enums.Gender.name()" because the return value of "com.carPooling.backend.entity.User.getGender()" is null
+2026-06-22T02:31:57.366+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/ride/vehicles
+2026-06-22T02:31:57.469+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/ride/vehicles
+2026-06-22T02:31:57.489+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-3] c.c.backend.controller.RideController    : VehicleListResponse Response: []
+2026-06-22T02:34:50.300+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/vehicles
+2026-06-22T02:34:50.324+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/vehicles
+2026-06-22T02:34:50.328+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-6] c.c.b.exception.GlobalExceptionHandler   : An unexpected error occurred: Request method 'POST' is not supported
 
-java.lang.NullPointerException: Cannot invoke "com.carPooling.backend.enums.Gender.name()" because the return value of "com.carPooling.backend.entity.User.getGender()" is null
-	at com.carPooling.backend.service.impl.RideServiceImpl.addVehicle(RideServiceImpl.java:217) ~[classes/:na]
-	at com.carPooling.backend.controller.RideController.addVehicle(RideController.java:68) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.18.jar:6.2.18]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.18.jar:6.2.18]
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.2.18.jar:6.2.18]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.18.jar:6.2.18]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.18.jar:6.2.18]
 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.18.jar:6.2.18]
@@ -2887,30 +2311,44 @@ java.lang.NullPointerException: Cannot invoke "com.carPooling.backend.enums.Gend
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
 	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
 
-2026-06-18T16:06:20.882+05:30  INFO 74061 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T16:06:20.886+05:30  INFO 74061 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T16:06:20.893+05:30  INFO 74061 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:06:20.897+05:30  INFO 74061 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T16:06:20.904+05:30  INFO 74061 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T16:06:23.997+05:30  INFO 79647 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 79647 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T16:06:23.998+05:30 DEBUG 79647 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T16:06:23.999+05:30  INFO 79647 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T16:06:24.411+05:30  INFO 79647 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T16:06:24.454+05:30  INFO 79647 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
-2026-06-18T16:06:24.817+05:30  INFO 79647 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T16:06:24.825+05:30  INFO 79647 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T16:06:24.825+05:30  INFO 79647 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T16:06:24.851+05:30  INFO 79647 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T16:06:24.852+05:30  INFO 79647 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 819 ms
-2026-06-18T16:06:24.924+05:30  INFO 79647 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T16:06:24.958+05:30  INFO 79647 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T16:06:24.973+05:30  INFO 79647 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T16:06:25.111+05:30  INFO 79647 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T16:06:25.127+05:30  INFO 79647 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T16:06:25.223+05:30  INFO 79647 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
-2026-06-18T16:06:25.224+05:30  INFO 79647 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T16:06:25.250+05:30  WARN 79647 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T16:06:25.260+05:30  INFO 79647 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-22T02:35:17.397+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/vehicle
+2026-06-22T02:35:17.411+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/vehicle
+2026-06-22T02:35:42.223+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/vehicle
+2026-06-22T02:35:42.238+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/vehicle
+2026-06-22T02:35:42.273+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-10] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=5, vehicleNumber=null, vehicleType=SUV, vehicleModel=Thar, color=Black, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
+2026-06-22T02:36:54.770+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/vehicle
+2026-06-22T02:36:54.784+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/vehicle
+2026-06-22T02:36:54.813+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-3] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=6, vehicleNumber=null, vehicleType=Sports, vehicleModel=Lambo, color=Pink, totalSeats=2, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
+2026-06-22T02:36:59.085+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/ride/vehicles
+2026-06-22T02:36:59.101+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/ride/vehicles
+2026-06-22T02:36:59.125+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-4] c.c.backend.controller.RideController    : VehicleListResponse Response: []
+2026-06-22T02:37:27.387+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/ride/vehicles
+2026-06-22T02:37:27.402+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/ride/vehicles
+2026-06-22T02:37:27.423+05:30 DEBUG 241044 --- [backend] [http-nio-8089-exec-5] c.c.backend.controller.RideController    : VehicleListResponse Response: []
+2026-06-22T02:38:45.777+05:30  INFO 241044 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-22T02:38:45.784+05:30  INFO 241044 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-22T02:38:45.796+05:30  INFO 241044 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-22T02:38:45.802+05:30  INFO 241044 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-22T02:38:45.817+05:30  INFO 241044 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-22T02:38:50.385+05:30  INFO 250354 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 250354 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
+2026-06-22T02:38:50.388+05:30 DEBUG 250354 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-22T02:38:50.390+05:30  INFO 250354 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-22T02:38:51.214+05:30  INFO 250354 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-22T02:38:51.282+05:30  INFO 250354 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2026-06-22T02:38:51.893+05:30  INFO 250354 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-06-22T02:38:51.907+05:30  INFO 250354 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-22T02:38:51.908+05:30  INFO 250354 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-22T02:38:51.952+05:30  INFO 250354 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-22T02:38:51.952+05:30  INFO 250354 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1501 ms
+2026-06-22T02:38:52.071+05:30  INFO 250354 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-22T02:38:52.136+05:30  INFO 250354 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-22T02:38:52.167+05:30  INFO 250354 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-22T02:38:52.409+05:30  INFO 250354 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-22T02:38:52.436+05:30  INFO 250354 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-22T02:38:52.589+05:30  INFO 250354 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79b7c350
+2026-06-22T02:38:52.591+05:30  INFO 250354 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-22T02:38:52.642+05:30  WARN 250354 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-22T02:38:52.663+05:30  INFO 250354 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.46
@@ -2918,130 +2356,18 @@ java.lang.NullPointerException: Cannot invoke "com.carPooling.backend.enums.Gend
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-18T16:06:25.790+05:30  INFO 79647 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T16:06:25.837+05:30  INFO 79647 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:06:25.989+05:30 DEBUG 79647 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T16:06:26.033+05:30  INFO 79647 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T16:06:26.033+05:30  WARN 79647 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T16:06:26.107+05:30  WARN 79647 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T16:06:26.293+05:30 DEBUG 79647 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T16:06:26.424+05:30  INFO 79647 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T16:06:26.430+05:30  INFO 79647 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 2.783 seconds (process running for 3.196)
-2026-06-18T16:06:30.234+05:30  INFO 79647 --- [backend] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T16:06:30.235+05:30  INFO 79647 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T16:06:30.236+05:30  INFO 79647 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-18T16:06:30.255+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:06:30.569+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:06:59.490+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:06:59.502+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:07:08.313+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:07:08.322+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:07:08.450+05:30 DEBUG 79647 --- [backend] [http-nio-8089-exec-5] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=352, vehicleNumber=null, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
-2026-06-18T16:10:16.729+05:30  INFO 79647 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T16:10:16.732+05:30  INFO 79647 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T16:10:16.739+05:30  INFO 79647 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:10:16.743+05:30  INFO 79647 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T16:10:16.749+05:30  INFO 79647 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T16:10:21.089+05:30  INFO 84577 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 84577 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T16:10:21.091+05:30 DEBUG 84577 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T16:10:21.092+05:30  INFO 84577 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T16:10:21.504+05:30  INFO 84577 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T16:10:21.544+05:30  INFO 84577 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
-2026-06-18T16:10:21.916+05:30  INFO 84577 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T16:10:21.924+05:30  INFO 84577 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T16:10:21.925+05:30  INFO 84577 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T16:10:21.951+05:30  INFO 84577 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T16:10:21.951+05:30  INFO 84577 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
-2026-06-18T16:10:22.029+05:30  INFO 84577 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T16:10:22.061+05:30  INFO 84577 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T16:10:22.083+05:30  INFO 84577 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T16:10:22.226+05:30  INFO 84577 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T16:10:22.243+05:30  INFO 84577 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T16:10:22.332+05:30  INFO 84577 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
-2026-06-18T16:10:22.333+05:30  INFO 84577 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T16:10:22.358+05:30  WARN 84577 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T16:10:22.368+05:30  INFO 84577 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T16:10:22.903+05:30  INFO 84577 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T16:10:22.946+05:30  INFO 84577 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:10:23.111+05:30 DEBUG 84577 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T16:10:23.147+05:30  INFO 84577 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T16:10:23.147+05:30  WARN 84577 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T16:10:23.215+05:30  WARN 84577 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T16:10:23.367+05:30 DEBUG 84577 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T16:10:23.485+05:30  INFO 84577 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T16:10:23.491+05:30  INFO 84577 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 2.764 seconds (process running for 3.001)
-2026-06-18T16:10:51.474+05:30  INFO 84577 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T16:10:51.475+05:30  INFO 84577 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T16:10:51.477+05:30  INFO 84577 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-18T16:10:51.494+05:30 DEBUG 84577 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:10:51.859+05:30 DEBUG 84577 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:10:52.063+05:30  WARN 84577 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
-2026-06-18T16:10:52.063+05:30 ERROR 84577 --- [backend] [http-nio-8089-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'id' doesn't have a default value
-2026-06-18T16:10:52.076+05:30 DEBUG 84577 --- [backend] [http-nio-8089-exec-2] c.c.b.service.impl.RideServiceImpl       : add vehicle {} : could not execute statement [Field 'id' doesn't have a default value] [insert into vehicles (vehicle_color,created_at,deleted_at,total_seats,updated_at,user_id,vehicle_model,vehicle_number,vehicle_type) values (?,?,?,?,?,?,?,?,?)]
-2026-06-18T16:11:35.426+05:30  INFO 84577 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T16:11:35.429+05:30  INFO 84577 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T16:11:35.435+05:30  INFO 84577 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:11:35.437+05:30  INFO 84577 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T16:11:35.445+05:30  INFO 84577 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-18T16:11:37.782+05:30  INFO 86234 --- [backend] [main] c.carPooling.backend.BackendApplication  : Starting BackendApplication using Java 17.0.15 with PID 86234 (/home/shivanshkumar/projects/backend/carpool_backend/target/classes started by shivanshkumar in /home/shivanshkumar/projects/backend/carpool_backend)
-2026-06-18T16:11:37.783+05:30 DEBUG 86234 --- [backend] [main] c.carPooling.backend.BackendApplication  : Running with Spring Boot v3.5.14, Spring v6.2.18
-2026-06-18T16:11:37.784+05:30  INFO 86234 --- [backend] [main] c.carPooling.backend.BackendApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-18T16:11:38.195+05:30  INFO 86234 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-18T16:11:38.237+05:30  INFO 86234 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
-2026-06-18T16:11:38.614+05:30  INFO 86234 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
-2026-06-18T16:11:38.627+05:30  INFO 86234 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-18T16:11:38.627+05:30  INFO 86234 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
-2026-06-18T16:11:38.651+05:30  INFO 86234 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-06-18T16:11:38.651+05:30  INFO 86234 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 843 ms
-2026-06-18T16:11:38.742+05:30  INFO 86234 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-06-18T16:11:38.779+05:30  INFO 86234 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
-2026-06-18T16:11:38.804+05:30  INFO 86234 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-06-18T16:11:38.943+05:30  INFO 86234 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-18T16:11:38.960+05:30  INFO 86234 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-18T16:11:39.051+05:30  INFO 86234 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9e50283
-2026-06-18T16:11:39.052+05:30  INFO 86234 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-18T16:11:39.078+05:30  WARN 86234 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-18T16:11:39.088+05:30  INFO 86234 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-18T16:11:39.569+05:30  INFO 86234 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-18T16:11:39.680+05:30  INFO 86234 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:11:39.857+05:30 DEBUG 86234 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
-2026-06-18T16:11:39.895+05:30  INFO 86234 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-06-18T16:11:39.895+05:30  WARN 86234 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-06-18T16:11:39.961+05:30  WARN 86234 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-18T16:11:40.118+05:30 DEBUG 86234 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-06-18T16:11:40.250+05:30  INFO 86234 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
-2026-06-18T16:11:40.256+05:30  INFO 86234 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 2.831 seconds (process running for 3.013)
-2026-06-18T16:11:42.017+05:30  INFO 86234 --- [backend] [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-18T16:11:42.017+05:30  INFO 86234 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-18T16:11:42.018+05:30  INFO 86234 --- [backend] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-18T16:11:42.028+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:11:42.197+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:11:42.314+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-2] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=1, vehicleNumber=null, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
-2026-06-18T16:11:50.469+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:11:50.478+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:11:50.498+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-3] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=2, vehicleNumber=null, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
-2026-06-18T16:11:56.712+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:11:56.724+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:11:56.742+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-4] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=3, vehicleNumber=null, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
-2026-06-18T16:12:03.698+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/ride/add_vehicle
-2026-06-18T16:12:03.712+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/ride/add_vehicle
-2026-06-18T16:12:03.762+05:30 DEBUG 86234 --- [backend] [http-nio-8089-exec-5] c.c.backend.controller.RideController    : addVehicle Response: AddVehicleResponse(vehicleId=4, vehicleNumber=null, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5, owner=OwnerResponse(name=null, email=nobita@gmail.com, phoneNumber=null, gender=, profilePicture=null, dob=null, collegeCompanyName=null))
-2026-06-18T16:13:08.119+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-18T16:13:08.123+05:30  INFO 86234 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-06-18T16:13:08.131+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-18T16:13:08.135+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-18T16:13:08.145+05:30  INFO 86234 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-22T02:38:53.527+05:30  INFO 250354 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-22T02:38:53.601+05:30  INFO 250354 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-22T02:38:53.863+05:30 DEBUG 250354 --- [backend] [main] c.c.backend.security.JwtAuthFilter       : Filter 'jwtAuthFilter' configured for use
+2026-06-22T02:38:53.921+05:30  INFO 250354 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-06-22T02:38:53.921+05:30  WARN 250354 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-06-22T02:38:54.058+05:30  WARN 250354 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-22T02:38:54.317+05:30 DEBUG 250354 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-06-22T02:38:54.514+05:30  INFO 250354 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2026-06-22T02:38:54.524+05:30  INFO 250354 --- [backend] [main] c.carPooling.backend.BackendApplication  : Started BackendApplication in 4.668 seconds (process running for 5.018)
+2026-06-22T02:38:58.304+05:30  INFO 250354 --- [backend] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-22T02:38:58.306+05:30  INFO 250354 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-22T02:38:58.313+05:30  INFO 250354 --- [backend] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-06-22T02:38:58.354+05:30 DEBUG 250354 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/ride/vehicles
+2026-06-22T02:38:58.689+05:30 DEBUG 250354 --- [backend] [http-nio-8089-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/ride/vehicles
+2026-06-22T02:38:58.738+05:30 DEBUG 250354 --- [backend] [http-nio-8089-exec-1] c.c.backend.controller.RideController    : VehicleListResponse Response: [VehicleListResponse(vehicleId=1, vehicleNumber=UP0KK7478, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5), VehicleListResponse(vehicleId=2, vehicleNumber=UP0KK7078, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5), VehicleListResponse(vehicleId=3, vehicleNumber=UP0KK7098, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5), VehicleListResponse(vehicleId=4, vehicleNumber=UP0KK2398, vehicleType=SUV, vehicleModel=E CLAS, color=BLUE, totalSeats=5), VehicleListResponse(vehicleId=5, vehicleNumber=UP56BG6789, vehicleType=SUV, vehicleModel=Thar, color=Black, totalSeats=5), VehicleListResponse(vehicleId=6, vehicleNumber=UP56BG6790, vehicleType=Sports, vehicleModel=Lambo, color=Pink, totalSeats=2)]

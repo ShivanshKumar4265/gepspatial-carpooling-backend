@@ -215,6 +215,7 @@ public class RideServiceImpl implements RideService {
         addVehicleResponse.setVehicleType(vehicles.getVehicleType());
         addVehicleResponse.setColor(vehicles.getColor());
         addVehicleResponse.setTotalSeats(vehicles.getTotalSeats());
+        addVehicleResponse.setVehicleNumber(vehicles.getVehicleNumber());
         // Safely convert gender to a String for the OwnerResponse (handle nulls and non-String enums)
         String genderString = (user.getGender() == null) ? "" : user.getGender().toString();
         addVehicleResponse.setOwner(new OwnerResponse(user.getName(), user.getEmail(), user.getPhoneNumber(), genderString, user.getProfilePicture(), user.getDob(), user.getCollegeCompanyName()));
@@ -222,7 +223,7 @@ public class RideServiceImpl implements RideService {
     }
 
     @Override
-    public List<VehicleListResponse> getVehicleListOfCurrentUser(AddVehicleRequest addVehicleRequest) {
+    public List<VehicleListResponse> getVehicleListOfCurrentUser() {
         User user = currentUserService.getCurrentUser();
         List<Vehicles>  vehiclesList;
         List<VehicleListResponse>  vehicleListResponse = new ArrayList<>();
@@ -230,7 +231,7 @@ public class RideServiceImpl implements RideService {
             vehiclesList = vehicleRepository.findAll();
 
             if(vehiclesList.isEmpty()){
-                return new ArrayList<VehicleListResponse>();
+                return new ArrayList<>();
             }
 
             for(int i = 0; i < vehiclesList.size();i++){
@@ -249,6 +250,6 @@ public class RideServiceImpl implements RideService {
         } catch (RuntimeException e) {
             throw  new RuntimeException("Vehicel list exception "+ e.getMessage());
         }
-        return List.of();
+        return vehicleListResponse;
     }
 }

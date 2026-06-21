@@ -15,5 +15,5 @@ public interface RideService {
     List<CreatePreferenceResponse> getPreferenceList();
 
     AddVehicleResponse  addVehicle(AddVehicleRequest addVehicleRequest);
-    List<VehicleListResponse>  getVehicleListOfCurrentUser(AddVehicleRequest addVehicleRequest);
+    List<VehicleListResponse>  getVehicleListOfCurrentUser();
 }

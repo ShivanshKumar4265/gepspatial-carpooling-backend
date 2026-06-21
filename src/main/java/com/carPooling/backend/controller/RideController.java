@@ -6,6 +6,7 @@ import com.carPooling.backend.dto.request.AddVehicleRequest;
 import com.carPooling.backend.dto.request.CreatePreferenceRequest;
 import com.carPooling.backend.dto.response.AddVehicleResponse;
 import com.carPooling.backend.dto.response.CreatePreferenceResponse;
+import com.carPooling.backend.dto.response.VehicleListResponse;
 import com.carPooling.backend.service.RideService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -60,7 +61,7 @@ public class RideController {
         );
     }
 
-    @PostMapping("/add_vehicle")
+    @PostMapping("/vehicle")
     public ResponseEntity<GenricDTO<AddVehicleResponse>> addVehicle(
             @Valid @RequestBody AddVehicleRequest addVehicleRequest
             ) {
@@ -75,6 +76,27 @@ public class RideController {
                 new GenricDTO<>(
                         true,
                         "Vehicle Added successfully",
+                        response
+                )
+        );
+    }
+
+
+    @GetMapping("/vehicles")
+    public ResponseEntity<GenricDTO<List<VehicleListResponse>>> getUsersVehicle(
+
+    ) {
+
+        List<VehicleListResponse> response = rideService.getVehicleListOfCurrentUser();
+
+        log.debug(
+                "VehicleListResponse Response: {}",
+                response
+        );
+        return ResponseEntity.ok(
+                new GenricDTO<>(
+                        true,
+                        "Vehicles fetched successfully",
                         response
                 )
         );
