@@ -25,7 +25,6 @@ public class Preference extends  BaseEntity{
 
     private boolean isActive = true;
 
-
     @ManyToMany(mappedBy = "preferences")
-    private Set<RideEntity> rides = new HashSet<>();
+    private Set<RideTemplate> rides = new HashSet<>();
 }
