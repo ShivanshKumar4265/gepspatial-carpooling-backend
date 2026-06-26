@@ -60,8 +60,15 @@ public class CreateRideRequest {
     private LocalTime departureTime;
 
     // ---------- Return Ride ----------
+    // ---------- Return Ride ----------
     @NotNull(message = "isReturnRide flag is required")
     private Boolean isReturnRide = false;
+
+    // Required only when isReturnRide = true (enforced by @ValidRepeatRide)
+    private LocalTime returnDepartureTime;
+
+    @FutureOrPresent(message = "Return ride date cannot be in the past")
+    private LocalDate returnRideDate;  // null = same date as forward ride
 
     @Positive(message = "Return ride id must be positive")
     private Long returnRideId;
@@ -69,6 +76,9 @@ public class CreateRideRequest {
     // ---------- Repeat Ride ----------
     @NotNull(message = "isRepeatRide flag is required")
     private Boolean isRepeatRide = false;
+
+    @Future(message = "Repeat end date must be in the future")
+    private LocalDate repeatUntil;
 
 //    @Null(message = "Repeat type must be null when repeat ride is false")
     private RepeatType repeatType;
