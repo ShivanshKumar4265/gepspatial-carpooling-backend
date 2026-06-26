@@ -4,6 +4,7 @@ import com.carPooling.backend.dto.request.*;
 import com.carPooling.backend.dto.response.CreatePasswordResponse;
 import com.carPooling.backend.dto.response.LogInResponse;
 import com.carPooling.backend.dto.response.RefreshTokenResponse;
+import com.carPooling.backend.dto.response.VehicleListResponse;
 import com.carPooling.backend.entity.RefreshToken;
 import com.carPooling.backend.entity.User;
 import com.carPooling.backend.exception.custom_exception.InvalidRequestException;
@@ -13,7 +14,6 @@ import com.carPooling.backend.repository.RefreshTokenRepository;
 import com.carPooling.backend.repository.UserRepository;
 import com.carPooling.backend.security.JwtUtil;
 import com.carPooling.backend.service.AuthService;
-import com.carPooling.backend.utils.StringConstant;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 @Slf4j                          // ← Lombok generates: private static final Logger log = ... Simple Logging Facade
@@ -111,9 +112,36 @@ public class AuthServiceImplements implements AuthService {
         refreshTokenRepository.save(refreshToken);
 
         LogInResponse response = new LogInResponse();
+
         response.setAccessToken(accessToken);
         response.setRefreshToken(refreshTokenValue);
-        response.setUser(user);
+
+        response.setId(user.getId());
+        response.setName(user.getName());
+        response.setEmail(user.getEmail());
+        response.setPhoneNumber(user.getPhoneNumber());
+        response.setProfilePicture(user.getProfilePicture());
+        response.setDob(user.getDob());
+        response.setGender(user.getGender());
+        response.setPhoneVerified(user.isPhoneVerified());
+        response.setCollegeCompanyName(user.getCollegeCompanyName());
+        response.setEmergencyContactName(user.getEmergencyContactName());
+        response.setEmergencyContactNumber(user.getEmergencyContactNumber());
+        response.setCity(user.getCity());
+
+        List<VehicleListResponse> vehicles = user.getVehiclesList()
+                .stream()
+                .map(vehicle -> new VehicleListResponse(
+                        vehicle.getId(),
+                        vehicle.getVehicleNumber(),
+                        vehicle.getVehicleType(),
+                        vehicle.getVehicleModel(),
+                        vehicle.getColor(),
+                        vehicle.getTotalSeats()
+                ))
+                .toList();
+
+//        response.setVehicles(vehicles);
 
         return response;
     }
